@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlgMsg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.syszone.t20.bmts.MessagesActivity">
+
+    <LinearLayout
+        android:id="@+id/dlgMsgSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dlg_m_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="관제 전송 메시지 입력"
+            android:minLines="1"
+            android:text="@null" />
+
+        <ImageButton
+            android:id="@+id/dlg_m_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dlg_m_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dlgMsgSend"
+        android:layout_alignParentTop="true"
+        android:transcriptMode="alwaysScroll" />
+
+</RelativeLayout>

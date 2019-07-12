@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">B2CSapp</string>
+    <string name="messages">문자</string>
+    <string name="settings">설정</string>
+
+    <string name="navigation_drawer_open">메뉴 열기</string>
+    <string name="navigation_drawer_close">메뉴 닫기</string>
+
+    <string name="action_call">통화</string>
+    <string name="action_sms">문자</string>
+    <string name="action_camera">사진</string>
+
+    <!-- Main Exit Dialog : Begin -->
+    <string name="main_information">안내</string>
+    <string name="main_exit_msg">앱을 종료하시겠습니까?</string>
+    <string name="main_btn_ok">예</string>
+    <string name="main_btn_cancel">아니오</string>
+    <!-- Main Exit Dialog : End -->
+
+</resources>

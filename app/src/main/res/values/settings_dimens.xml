@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="settings_category_layout_margin">0.0dip</dimen>
+
+</resources>

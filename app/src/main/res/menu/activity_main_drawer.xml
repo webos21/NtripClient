@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cur_pos"
+            android:icon="@mipmap/ic_action_current_position"
+            android:title="현 위치" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@mipmap/ic_action_call"
+            android:title="음성통화" />
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@mipmap/ic_action_sms"
+            android:title="문자전송" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_action_camera"
+            android:title="사진촬영" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="설정" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kr.syszone.t20.bmts.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/info_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/border_box"
+        android:padding="3dip"
+        android:text="10km"
+        android:textColor="#ff333333"
+        android:textSize="12sp" />
+
+    <kr.syszone.t20.bmts.widget.OutlineTextView
+        android:id="@+id/speed_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:text="10km"
+        android:textColor="#ffffc107"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:textStroke="true"
+        app:textStrokeColor="#ffffffff"
+        app:textStrokeWidth="12.0" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dialog - Choose File : Begin -->
+    <string name="dlg_file_title">Choose firmware image</string>
+    <string name="dlg_file_select">Select</string>
+    <string name="dlg_file_nodata">No Data</string>
+    <string name="dlg_file_location">Location</string>
+    <string name="dlg_file_cannot_load">File or folder is not valid!</string>
+    <!-- Dialog - Choose File : End -->
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/settings_user">
+        <android.support.v7.preference.EditTextPreference
+            android:defaultValue="@string/settings_phone_number_def"
+            android:key="settings_phone_number"
+            android:summary="@string/settings_edittext_summary"
+            android:title="@string/settings_phone_number" />
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/settings_gether">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="settings_gether"
+            android:summaryOff="@string/settings_gether_sensing_data_off_msg"
+            android:summaryOn="@string/settings_gether_sensing_data_on_msg"
+            android:switchTextOff="@string/settings_off"
+            android:switchTextOn="@string/settings_on"
+            android:title="@string/settings_gether_sensing_data" />
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:dependency="settings_gether"
+            android:key="settings_gether_dlog"
+            android:summaryOff="@string/settings_gether_dlog_off_msg"
+            android:summaryOn="@string/settings_gether_dlog_on_msg"
+            android:switchTextOff="@string/settings_off"
+            android:switchTextOn="@string/settings_on"
+            android:title="@string/settings_gether_dlog" />
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="5"
+            android:dependency="settings_gether"
+            android:entries="@array/settings_gether_period_entries"
+            android:entryValues="@array/settings_gether_period_values"
+            android:key="setting_gether_period"
+            android:summary="%s"
+            android:title="@string/settings_gether_period" />
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/settings_platform">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="settings_transfer"
+            android:summaryOff="@string/settings_transfer_sensing_data_off_msg"
+            android:summaryOn="@string/settings_transfer_sensing_data_on_msg"
+            android:switchTextOff="@string/settings_off"
+            android:switchTextOn="@string/settings_on"
+            android:title="@string/settings_transfer_sensing_data" />
+        <android.support.v7.preference.EditTextPreference
+            android:defaultValue="@string/settings_server_address_def"
+            android:dependency="settings_transfer"
+            android:key="setting_server_address"
+            android:summary="@string/settings_edittext_summary"
+            android:title="@string/settings_server_address" />
+        <android.support.v7.preference.EditTextPreference
+            android:defaultValue="@string/settings_server_port_def"
+            android:dependency="settings_transfer"
+            android:key="setting_server_port"
+            android:summary="@string/settings_edittext_summary"
+            android:title="@string/settings_server_port" />
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="10"
+            android:dependency="settings_transfer"
+            android:entries="@array/settings_message_period_entries"
+            android:entryValues="@array/settings_message_period_values"
+            android:key="setting_message_period"
+            android:summary="%s"
+            android:title="@string/settings_message_period" />
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="180"
+            android:dependency="settings_transfer"
+            android:entries="@array/settings_transfer_period_entries"
+            android:entryValues="@array/settings_transfer_period_values"
+            android:key="setting_transfer_period"
+            android:summary="%s"
+            android:title="@string/settings_transfer_period" />
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

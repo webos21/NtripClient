@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowMsgSend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dip"
+        android:layout_weight="6"
+        android:background="@drawable/rounded_corner_send"
+        android:padding="16dip"
+        android:text="Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example."
+        android:textColor="#000" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="-15dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/bg_arrow_send" />
+
+</LinearLayout>

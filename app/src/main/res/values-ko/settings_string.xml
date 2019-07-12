@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_on">ON</string>
+    <string name="settings_off">OFF</string>
+    <string name="settings_edittext_summary">값을 입력해 주세요.</string>
+
+    <string name="settings_user">사용자</string>
+    <string name="settings_phone_number">전화번호</string>
+    <string name="settings_phone_number_def">KR01062053117</string>
+
+    <string name="settings_gether">센서정보 수집</string>
+    <string name="settings_gether_dlog">데이터 로거 연동</string>
+    <string name="settings_gether_dlog_on_msg">데이터 로거 이용</string>
+    <string name="settings_gether_dlog_off_msg">이 장치 이용</string>
+    <string name="settings_gether_sensing_data">센서정보 수집</string>
+    <string name="settings_gether_sensing_data_on_msg">센서 정보를 수집합니다.</string>
+    <string name="settings_gether_sensing_data_off_msg">센서 정보를 수집하지 않습니다.</string>
+    <string name="settings_gether_period">수집주기</string>
+
+    <string name="settings_platform">센서정보 전송</string>
+    <string name="settings_transfer_sensing_data">서버로 센서정보 전송</string>
+    <string name="settings_transfer_sensing_data_on_msg">서버로 센서 정보를 전송합니다.</string>
+    <string name="settings_transfer_sensing_data_off_msg">서버로 센서 정보를 전송하지 않습니다.</string>
+    <string name="settings_server_address">서버 주소</string>
+    <string name="settings_server_address_def">mid06.hazzero.co.kr</string>
+    <string name="settings_server_port">서버 포트</string>
+    <string name="settings_server_port_def">443</string>
+    <string name="settings_message_period">문자주기</string>
+    <string name="settings_transfer_period">전송주기</string>
+
+</resources>

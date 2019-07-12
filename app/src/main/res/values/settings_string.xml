@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_on">ON</string>
+    <string name="settings_off">OFF</string>
+    <string name="settings_edittext_summary">Input Value</string>
+
+    <string name="settings_user">User</string>
+    <string name="settings_phone_number">Phone Number</string>
+    <string name="settings_phone_number_def">KR01062053117</string>
+
+    <string name="settings_gether">Gethering</string>
+    <string name="settings_gether_dlog">Use Data Logger</string>
+    <string name="settings_gether_dlog_on_msg">use the Data Logger</string>
+    <string name="settings_gether_dlog_off_msg">use This Device Sensor</string>
+    <string name="settings_gether_sensing_data">Gether the sensing data</string>
+    <string name="settings_gether_sensing_data_on_msg">Gether the sensing data gethered</string>
+    <string name="settings_gether_sensing_data_off_msg">Do not gether the sensing data</string>
+    <string name="settings_gether_period">Gether Period</string>
+
+    <string name="settings_platform">Server Platform</string>
+    <string name="settings_transfer_sensing_data">Transfer the sensing data gethered</string>
+    <string name="settings_transfer_sensing_data_on_msg">Transfer the sensing data gethered</string>
+    <string name="settings_transfer_sensing_data_off_msg">Do not transfer the sensing data gethered</string>
+    <string name="settings_server_address">Server Address (Domain-Name or IP)</string>
+    <string name="settings_server_address_def">mid06.hazzero.co.kr</string>
+    <string name="settings_server_port">Server Port</string>
+    <string name="settings_server_port_def">443</string>
+    <string name="settings_message_period">Message Period</string>
+    <string name="settings_transfer_period">Transfer Period</string>
+
+</resources>

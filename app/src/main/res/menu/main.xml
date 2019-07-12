@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_call"
+        android:icon="@mipmap/ic_action_call"
+        android:orderInCategory="100"
+        android:title="@string/action_call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_sms"
+        android:icon="@mipmap/ic_action_sms"
+        android:orderInCategory="100"
+        android:title="@string/action_sms"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@mipmap/ic_action_camera"
+        android:orderInCategory="100"
+        android:title="@string/action_camera"
+        app:showAsAction="always" />
+
+</menu>

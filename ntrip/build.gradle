@@ -1,0 +1,16 @@
+
+apply plugin: 'java'
+
+compileJava {
+    sourceCompatibility = 1.5
+    targetCompatibility = 1.5
+}
+
+dependencies {
+    implementation project(':webos21-java')
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+}
