@@ -1,4 +1,4 @@
-package com.gmail.webos21.ntrip.model;
+package com.gmail.webos21.ntrip.source;
 
 public enum NmeaEnabled {
     UNKNOWN(-1), NMEA_DISABLED(0), NMEA_ENABLED(1);

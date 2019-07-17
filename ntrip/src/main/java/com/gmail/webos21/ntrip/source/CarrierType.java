@@ -1,4 +1,4 @@
-package com.gmail.webos21.ntrip.model;
+package com.gmail.webos21.ntrip.source;
 
 public enum CarrierType {
     UNKNOWN(-1), DGPS(0), RTK(1)/* L1 */, RTK2(2) /* L1 & L2 */;

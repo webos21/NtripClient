@@ -1,7 +1,7 @@
 package com.gmail.webos21.ntrip;
 
-import com.gmail.webos21.ntrip.model.NtripSource;
-import com.gmail.webos21.ntrip.model.ServerInfo;
+import com.gmail.webos21.ntrip.source.NtripSource;
+import com.gmail.webos21.ntrip.source.ServerInfo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.gmail.webos21.ntrip.model;
+package com.gmail.webos21.ntrip.source;
 
 public enum AuthType {
     UNKNOWN, N, B, D;

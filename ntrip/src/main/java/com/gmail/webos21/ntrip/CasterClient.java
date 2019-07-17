@@ -1,12 +1,12 @@
 package com.gmail.webos21.ntrip;
 
 import com.gmail.webos21.crypto.Base64;
-import com.gmail.webos21.ntrip.model.CasterSource;
-import com.gmail.webos21.ntrip.model.NetworkSource;
-import com.gmail.webos21.ntrip.model.NtripSource;
-import com.gmail.webos21.ntrip.model.ServerInfo;
-import com.gmail.webos21.ntrip.model.SourceType;
-import com.gmail.webos21.ntrip.model.StreamSource;
+import com.gmail.webos21.ntrip.source.CasterSource;
+import com.gmail.webos21.ntrip.source.NetworkSource;
+import com.gmail.webos21.ntrip.source.NtripSource;
+import com.gmail.webos21.ntrip.source.ServerInfo;
+import com.gmail.webos21.ntrip.source.SourceType;
+import com.gmail.webos21.ntrip.source.StreamSource;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
