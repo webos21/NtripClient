@@ -1,5 +1,4 @@
-
-apply plugin: 'java'
+apply plugin: 'java-library'
 
 compileJava {
     sourceCompatibility = 1.6
@@ -8,8 +7,4 @@ compileJava {
 
 dependencies {
     testImplementation 'junit:junit:4.13.1'
-}
-
-jar {
-    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }

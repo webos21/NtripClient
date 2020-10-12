@@ -20,6 +20,7 @@ android {
         versionCode 1
         versionName "1.0.1"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -33,10 +34,10 @@ dependencies {
     implementation project(':webos21-android')
     implementation project(':ntrip')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'androidx.preference:preference:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
     implementation 'commons-net:commons-net:3.5'
     testImplementation 'junit:junit:4.13.1'
 }

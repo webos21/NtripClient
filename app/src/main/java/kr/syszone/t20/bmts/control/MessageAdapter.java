@@ -24,7 +24,7 @@ public class MessageAdapter extends CursorAdapter {
     private String phoneNo;
 
     public MessageAdapter(Context context, Cursor cursor) {
-        super(context, cursor);
+        super(context, cursor, true);
 
         // Initialize the SharedPreference
         SharedPreferences shPref = PreferenceManager.getDefaultSharedPreferences(context);

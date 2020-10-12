@@ -6,8 +6,6 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.util.Date;
-
 import kr.syszone.t20.bmts.tmap.TMapEventHandler;
 
 public class GpsListener implements LocationListener {
@@ -36,7 +34,9 @@ public class GpsListener implements LocationListener {
         speedView.setText(kmh + "km");
     }
 
+    @SuppressWarnings("deprecation")
     public void onStatusChanged(String s, int i, Bundle b) {
+        // This method was deprecated in API level 29.
     }
 
     public void onProviderDisabled(String s) {

@@ -5,11 +5,12 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Environment;
-import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AlertDialog;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -88,12 +89,11 @@ public class PreviewDialog extends AlertDialog implements DialogInterface,
     private File getStoreDir() {
         File cacheDir = null;
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            String mntPath = Environment.getExternalStorageDirectory().getPath() + "/Android/data/" + act.getPackageName();
-            cacheDir = new File(mntPath, "cache");
+            cacheDir = getContext().getExternalCacheDir();
         } else {
             cacheDir = act.getCacheDir();
         }
-        if (!cacheDir.exists()) {
+        if (cacheDir != null && !cacheDir.exists()) {
             cacheDir.mkdirs();
         }
         return cacheDir;
