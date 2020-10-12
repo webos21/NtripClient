@@ -14,7 +14,7 @@ import kr.syszone.t20.bmts.model.ObdData;
 
 public class B2CSApp extends Application {
 
-    private EngLib engLib;
+    // private EngLib engLib;
     private DbApi dbh;
 
     private List<GpsData> gpsList;
@@ -35,16 +35,16 @@ public class B2CSApp extends Application {
         DbOpenHelper doh = new DbOpenHelper(this);
         dbh = doh.getHandler();
 
-        engLib = EngLibFactory.getLibrary();
+        // engLib = EngLibFactory.getLibrary();
     }
 
     @Override
     public void onTerminate() {
         Log.i("Application", "onTerminate!!!!!!!!!!!!!");
-        if (engLib != null) {
-            EngLibFactory.releaseLibrary();
-            engLib = null;
-        }
+//        if (engLib != null) {
+//            EngLibFactory.releaseLibrary();
+//            engLib = null;
+//        }
         if (dbh != null) {
             dbh = null;
         }
@@ -55,10 +55,9 @@ public class B2CSApp extends Application {
         return dbh;
     }
 
-    public EngLib getEngLib() {
-        return engLib;
-    }
-
+//    public EngLib getEngLib() {
+//        return engLib;
+//    }
 
     public void setGpsList(List<GpsData> gpsList) {
         this.gpsList = gpsList;

@@ -123,12 +123,10 @@ public class CasterSource implements NtripSource {
         this.fallbackPort = fallbackPort;
     }
 
-    @Override
     public String getRawLine() {
         return rawLine;
     }
 
-    @Override
     public String getSourceJson() {
         StringBuilder sb = new StringBuilder();
         sb.append('{').append('\n');

@@ -5,7 +5,7 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Environment;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;

@@ -3,7 +3,7 @@ package kr.syszone.t20.bmts.task;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.support.v7.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.util.Log;
 
 import com.gmail.webos21.http.HttpHelper;

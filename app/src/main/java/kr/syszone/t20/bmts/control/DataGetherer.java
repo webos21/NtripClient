@@ -11,14 +11,13 @@ import kr.syszone.t20.bmts.model.AmbData;
 import kr.syszone.t20.bmts.model.GpsData;
 import kr.syszone.t20.bmts.model.ObdData;
 import kr.syszone.t20.bmts.tmap.TMapEventHandler;
-import com.gmail.webos21.ntrip.lib.comm.ConnectState;
 
 public class DataGetherer {
 
     private static final SimpleDateFormat SDF_PARSER = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.getDefault());
 
     private TMapEventHandler tmapHandler;
-    private EngLib engLib;
+//    private EngLib engLib;
 
     public DataGetherer() {
     }
@@ -32,6 +31,7 @@ public class DataGetherer {
                 gd = new GpsData((Long) null, loc.getTime(), loc.getLatitude(), loc.getLongitude(), (float) loc.getAltitude(), loc.getAccuracy(), kmh, loc.getBearing());
             }
         }
+        /*
         if (engLib != null && engLib.getConnectionState() == ConnectState.ON) {
             String gpsData = engLib.getDLogGps();
             String[] gpsDataArr = (gpsData == null || gpsData.length() == 0) ? null : gpsData.split(",");
@@ -52,11 +52,13 @@ public class DataGetherer {
                 }
             }
         }
+        */
         return gd;
     }
 
     public ObdData getObdData() {
         ObdData od = null;
+        /*
         if (engLib != null && engLib.getConnectionState() == ConnectState.ON) {
             String obdData = engLib.getDLogObd();
             String[] obdDataArr = (obdData == null || obdData.length() == 0) ? null : obdData.split(",");
@@ -85,11 +87,13 @@ public class DataGetherer {
                 }
             }
         }
+        */
         return od;
     }
 
     public AmbData getAmbData() {
         AmbData ad = null;
+        /*
         if (engLib != null && engLib.getConnectionState() == ConnectState.ON) {
             String tnhData = engLib.getDLogTnh();
             String[] tnhDataArr = (tnhData == null || tnhData.length() == 0) ? null : tnhData.split(",");
@@ -106,17 +110,20 @@ public class DataGetherer {
                 }
             }
         }
+        */
         return ad;
     }
 
     public void setTmapHandler(TMapEventHandler tmapHandler) {
-        this.engLib = null;
+        // this.engLib = null;
         this.tmapHandler = tmapHandler;
     }
 
+    /*
     public void setEngLib(EngLib engLib) {
         this.tmapHandler = null;
         this.engLib = engLib;
     }
+    */
 
 }

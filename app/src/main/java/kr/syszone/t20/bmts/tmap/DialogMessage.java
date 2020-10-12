@@ -2,7 +2,7 @@ package kr.syszone.t20.bmts.tmap;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 
 import kr.syszone.t20.bmts.R;
 

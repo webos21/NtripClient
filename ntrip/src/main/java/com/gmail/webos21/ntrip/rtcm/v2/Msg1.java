@@ -6,12 +6,10 @@ import com.gmail.webos21.ntrip.rtcm.Version;
 
 public class Msg1 implements Message {
 
-    @Override
     public Version getVersion() {
         return null;
     }
 
-    @Override
     public MessageId getMessageId() {
         return null;
     }
